@@ -100,6 +100,9 @@ My goal of sharing this config is to get more players to have the optimal settin
 | Paged Pool Memory Available 	| High                                                     	|
 
  7. Launch game and open console and run the following command once: `unbindall; exec config_default.cfg; exec autoexec.cfg`
+
+> Please note that the command above basically resets the game config. All custom binds/mappins will be removed. You will have to manually add or change your custom binds/mappings.
+
  8. Change any binding that you do manually (like binding different key to zoom, changing crouch key, etc) in the game settings
  
 ## The files
