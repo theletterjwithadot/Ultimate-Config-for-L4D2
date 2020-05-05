@@ -1,4 +1,4 @@
-﻿# Ultimate L4D2 Config by J (autoexec).
+﻿# Ultimate L4D2 Config by J. (autoexec)
 
 - [Ultimate L4D2 Config by J. (autoexec)](#ultimate-l4d2-config-by-j-(autoexec))
   * [Reviews](#reviews)
