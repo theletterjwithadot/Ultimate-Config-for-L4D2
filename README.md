@@ -80,7 +80,7 @@ My goal of sharing this config is to get more players to have the optimal settin
  2. Drop the folders into your game directory:
 `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`
  3. Setup launch options of L4D2: `Right-click Left 4 Dead 2 >> Properties >> Set Launch Options`
- 4. Add the following line into the box: `-lv +mat_queue_mode 2 +precache_all_survivors 1 -novid -console -noipx -nod3d9ex -nojoy -noforcemaccel -noforcemparms +mat_motion_blur_percent_of_screen_max 0 +clientport 27619`
+ 4. Add the following line into the box: `-lv -high +mat_queue_mode 2 +precache_all_survivors 1 -novid -console -noipx -nod3d9ex -nojoy -noforcemaccel -noforcemparms +mat_motion_blur_percent_of_screen_max 0 +clientport 27619`
  5. Remove `-lv` if you want all the gore and violence
  6. Setup video settings as per given below if you have a potato computer like mine (you may use your higher settings for items in **bold** if you have a beast)
 
