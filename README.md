@@ -1,38 +1,20 @@
-# Ultimate L4D2 Config by J. (autoexec)
+# Ultimate L4D2 Config (autoexec) by J.
 
-- [Ultimate L4D2 Config by J. (autoexec)](#ultimate-l4d2-config-by-j--autoexec-)
-  * [Disclaimer](#disclaimer)
-  * [Reviews](#reviews)
-  * [Preamble](#preamble)
-  * [Backing up current config](#backing-up-current-config)
-  * [Instructions](#instructions)
-  * [The files](#the-files)
-    + [CSGO Font](#csgo-font)
-    + [autoexec.cfg](#autoexeccfg)
-    + [ultimateconfig.cfg](#ultimateconfigcfg)
-    + [helper.cfg](#helpercfg)
-    + [config_custom.cfg](#config-customcfg)
-  * [Breakdown of ultimateconfig.cfg](#breakdown-of-ultimateconfigcfg)
-    + [Reset Config [Disabled]](#reset-config--disabled-)
-    + [General Client Settings](#general-client-settings)
-    + [Subtitles](#subtitles)
-    + [Video](#video)
-    + [Audio](#audio)
-    + [Mic](#mic)
-    + [Network](#network)
-    + [Rates & Lerps](#rates---lerps)
-    + [Crosshair](#crosshair)
-    + [Mouse](#mouse)
-    + [Keyboard](#keyboard)
-    + [Glows](#glows)
-    + [Net Graph](#net-graph)
-    + [Binds](#binds)
-    + [Aliases](#aliases)
-    + [Toggles](#toggles)
-    + [Server Connect Binds](#server-connect-binds)
-    + [Final Launch Parameters](#final-launch-parameters)
-    + [Execute Custom Config](#execute-custom-config)
-    + [Write Changes To Config](#write-changes-to-config)
+- [Disclaimer](#disclaimer)
+- [Preamble](#preamble)
+- [Backing up current config](#backing-up-current-config)
+- [Instructions](#instructions)
+- [The files](#the-files)
+  - [autoexec.cfg](#autoexeccfg)
+  - [ultimateconfig.cfg](#ultimateconfigcfg)
+  - [config_custom.cfg](#config_customcfg)
+  - [helper.cfg](#helpercfg)
+  - [binds_config.cfg](#binds_configcfg)
+  - [binds_pressed.cfg](#binds_pressedcfg)
+  - [binds_unpressed.cfg](#binds_unpressedcfg)
+  - [CSGO Font w Console](#csgo-font-w-console)
+  - [Color Correction](#color-correction)
+- [Reviews](#reviews)
 
 ## Disclaimer
 
@@ -40,6 +22,105 @@
 - The config here is given "AS IS" with no warranty
 - The config changes quite a handful of [cvars](https://developer.valvesoftware.com/wiki/List_of_L4D2_Cvars) in the game as such, please perform your own backup if you would like to rollback to your previous config
 - Individual's mileage may vary
+
+## Preamble
+- Many players do not have the basic setup for Left 4 Dead 2 which hinders them from playing well in the competitive servers especially those running on above the default server tick rate of 30
+- This config is meant to provide a player with the needed adjustments and also with additional features that assists and optimizes their gameplay
+- My goal of sharing this config is to get more players to have the optimal settings configured for this game so that everyone can have a better gaming experience all together
+
+## Backing up current config
+1. Go to your Left 4 Dead 2 installation directory `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`
+2. Right-click `cfg` folder and click `Send to >> Compressed (zipped) folder`
+3. This will be your backup in the event that you would like to revert back to your original settings
+   - Simply delete `cfg` folder and extract the zipped `cfg` folder
+
+## Instructions
+ 1. **Read through each config file to understand what is happening**
+ 2. Copy the files and folders into your game directory:
+`.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`
+ 3. Setup launch options of L4D2: `Right-click Left 4 Dead 2 >> Properties >> Set Launch Options`
+  4. Add the following line into the box: `-lv -noborder -high +mat_queue_mode 2 +precache_all_survivors 1 -novid -console -noipx -nod3d9ex -nojoy -noforcemaccel -noforcemparms +mat_motion_blur_percent_of_screen_max 0 +clientport 27619`
+      - Remove `-lv` if you do not prefer to play in low violence mode
+ 6. Setup video settings as per given below if you have a potato computer like mine (you may use your higher settings for items in **bold** if you have a beast)
+
+| Setting                     | Value                         | Remarks                                                      |
+| --------------------------- | ----------------------------- | ------------------------------------------------------------ |
+| Aspect Ratio                | As per your your screen size  |                                                              |
+| Resolution                  | As per your native resolution |                                                              |
+| Display Mode                | Full screen                   |                                                              |
+| **Film Grain Amount**       | None                          | For screen clarity                                           |
+| **Anti-Aliasing Mode**      | None                          | No reason to have this enabled. If you have a powerful system, you can set this to max. |
+| **Filtering Mode**          | Trilinear                     | No reason to run higher than this                            |
+| Wait For Vertical Sync      | Disabled                      | Having VSync enabled locks your FPS to your screen's refresh rate that causes input lag |
+| Shader Detail               | Low                           | If you have a powerful system, you can set this to max       |
+| Effect Detail               | High                          | This is to ensure that you can see Tank rocks from a distance |
+| **Model/Texture Detail**    | Low                           | If you have a powerful system, you can set this to max       |
+| Multicore Rendering         | Enabled                       | Uses all available CPU cores for the game                    |
+| Paged Pool Memory Available | High                          | More memory is assigned to the game which results in the game loading maps slightly faster |
+
+  7. Launch game and open console and run the following command: `unbindall; exec config_default.cfg; exec autoexec.cfg`
+      - Please note that the command above **resets the game config**. **All custom binds/mappings will be removed**. You will have to manually add or change your custom binds/mappings after this command.
+
+ 8. Change any binding that you do manually (like binding different key to zoom, changing crouch key, etc) in the game settings
+
+## The files
+
+### autoexec.cfg
+    .../cfg/autoexec.cfg
+The `autoexec.cfg` runs a command that is needed to make the CSGO Font addon to work. Ensure that you change the resolution in
+
+> alias reloadfont "mat_setvideomode **1920 1080** 1; mat_setvideomode **1920 1080** 0"
+
+to match your resolution. It is also where the `ultimateconfig.cfg` is called to be executed.
+
+### ultimateconfig.cfg
+    .../cfg/ultimateconfig/ultimateconfig.cfg
+This is where the rest of the magic happens.
+
+### config_custom.cfg
+
+    .../cfg/ultimateconfig/config_custom.cfg
+
+Whatever additional config that you want to add should go here. Instead of changing the `ultimateconfig.cfg`, copy the cvar that you want to change and paste it here with the desired value. This is so that in future, it is easier to update these configs.
+
+### helper.cfg
+
+    .../cfg/ultimateconfig/additional_files/helper.cfg
+
+Typing `help` in console will print out this file that displays all the available commands for quick and easy reference.
+
+### binds_config.cfg
+
+    .../cfg/ultimateconfig/additional_files/binds_config.cfg
+
+Main file that handles dynamic binds. Comment out the execution line in `ultimateconfig.cfg` if you do not wish to use this (right at the bottom).
+
+### binds_pressed.cfg
+
+    .../cfg/ultimateconfig/additional_files/binds_pressed.cfg
+
+These are the binds when ALT key is pressed. These are binds that I made as i have to say these frequently. You can change this as to how you want. Each bind basically has 5 different sentences (thus "dynamic binds").
+
+### binds_unpressed.cfg
+
+    .../cfg/ultimateconfig/additional_files/binds_unpressed.cfg
+
+These are the binds when ALT key is not pressed. These are binds that I made as i have to say these frequently. You can change this as to how you want. Each bind basically has 5 different sentences (thus "dynamic binds").
+
+### CSGO Font w Console 
+
+    .../addons/CSGO Font.vpk
+
+A font pack that makes the game menu and texts cleaner also also enlarges console text to make it more readable than the default font size.
+
+### Color Correction
+
+    .../materials/correction/ghost.pwl.raw
+    .../materials/correction/ghost.raw
+    .../materials/correction/infected.pwl.raw
+    .../materials/correction/infected.raw
+
+These files adjust the orange and blue tint for Special Infected, making it lighter. Credits to [Derpduck](http://www.steamcommunity.com/profiles/76561198038478485) for creating these files.
 
 ## Reviews
 
@@ -66,158 +147,3 @@
 > *What I will tell you is that, after a versus L4D2 player for so long being, I give my stamp of awe and approval for his work after testing/using it for a few weeks. Rating this ultimate config 12 outta 10 stars #cantlivewithoutit*
 
 [daemon9s](http://www.steamcommunity.com/profiles/76561198308768316 "daemon9s")
-
-## Preamble
-- Many players do not have the basic setup for Left 4 Dead 2 which hinders them from playing well in the competitive servers especially those running on above the default server tick rate of 30
-- This config is meant to provide a player with the needed adjustments and also with additional features that assists and optimizes their gameplay
-- My goal of sharing this config is to get more players to have the optimal settings configured for this game so that everyone can have a better gaming experience all together
-
-## Backing up current config
-1. Go to your Left 4 Dead 2 installation directory `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`
-2. Create a copy of the folder `cfg` and rename it to `cfg.bak`
-3. This will be your backup in the event that you would like to revert back to your original settings
-   - Simply delete `cfg` folder and rename `cfg.bak` to `cfg`
-
-## Instructions
- 1. Read through the config to understand what is happening
- 2. Copy the files and folders into your game directory:
-`.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`
- 3. Setup launch options of L4D2: `Right-click Left 4 Dead 2 >> Properties >> Set Launch Options`
-  4. Add the following line into the box: `-lv -high +mat_queue_mode 2 +precache_all_survivors 1 -novid -console -noipx -nod3d9ex -nojoy -noforcemaccel -noforcemparms +mat_motion_blur_percent_of_screen_max 0 +clientport 27619`
-      - Remove `-lv` if you do not prefer to play in low violence mode
- 6. Setup video settings as per given below if you have a potato computer like mine (you may use your higher settings for items in **bold** if you have a beast)
-
-| Setting                     | Value                         | Remarks                                                      |
-| --------------------------- | ----------------------------- | ------------------------------------------------------------ |
-| Aspect Ratio                | As per your your screen size  |                                                              |
-| Resolution                  | As per your native resolution |                                                              |
-| Display Mode                | Full screen                   |                                                              |
-| **Film Grain Amount**       | None                          | For screen clarity                                           |
-| **Anti-Aliasing Mode**      | None                          | No reason to have this enabled. If you have a powerful system, you can set this to max. |
-| **Filtering Mode**          | Trilinear                     | No reason to run higher than this                            |
-| Wait For Vertical Sync      | Disabled                      | Having VSync enabled locks your FPS to your screen's refresh rate that causes input lag |
-| Shader Detail               | Low                           | If you have a powerful system, you can set this to max       |
-| Effect Detail               | High                          | This is to ensure that you can see Tank rocks from a distance |
-| **Model/Texture Detail**    | Low                           | If you have a powerful system, you can set this to max       |
-| Multicore Rendering         | Enabled                       | Uses all available CPU cores for the game                    |
-| Paged Pool Memory Available | High                          | More memory is assigned to the game which results in the game loading maps slightly faster |
-
-  7. Launch game and open console and run the following command: `unbindall; exec config_default.cfg; exec autoexec.cfg`
-      - Please note that the command above **resets the game config**. All custom binds/mappings **will be removed**. You will have to manually add or change your custom binds/mappings after this command.
-
- 8. Change any binding that you do manually (like binding different key to zoom, changing crouch key, etc) in the game settings
-
-## The files
-
-### CSGO Font
-    .../addons/CSGO Font.vpk
-A font pack that makes the game menu and texts nicer and clearer to read.
-
-### autoexec.cfg
-    .../cfg/autoexec.cfg
-The autoexec.cfg runs a command that is needed to make the CSGO Font addon to work. Ensure that you change the resolution in
-
-> alias reloadfont "mat_setvideomode **1920 1080** 1; mat_setvideomode **1920 1080** 0"
-
-to match your resolution. It is also where the ultimateconfig.cfg is called to be executed.
-
-### ultimateconfig.cfg
-    .../cfg/ultimateconfig/ultimateconfig.cfg
-This is where the rest of the magic happens.
-
-### helper.cfg
-
-    .../cfg/ultimateconfig/helper.cfg
-
-Typing `help` in console will print out this file that displays all the available commands for quick and easy reference
-
-### config_custom.cfg
-
-    .../cfg/ultimateconfig/config_custom.cfg
-
-Whatever additional config that you want to add should go here. Instead of changing the `ultimateconfig.cfg`, copy the cvar that you want to change and paste it here with the desired value. This is so that in future, it is easier to update these configs.
-
-## Breakdown of ultimateconfig.cfg
-### Reset Config [Disabled]
-- Reset the game configuration to the default configuration before we make changes
-
-- As it resets the configuration and applies only what is in this config, whatever extra custom config that a user has done manually will not be saved
-
-- Commented out as not everyone know how to deal with this
-
-
-### General Client Settings
-- Just basic client cvars, enabling console, disabling joystick and Steam controller
-
-
-### Subtitles
-- Set up subtitles - quite useful as you can use the dialogues to identify what is happening/going to happen
-
-
-### Video
-- Increase game brightness (adjust the value if the game is too bright)
-- Reduce unnecessary animations that eat up few FPS
-
-### Audio
-- Disable game music to hear SI better
-- Setup audio for clarity
-
-
-### Mic
-- Basic mic setup, nothing fancy
-
-
-### Network
-- Setup network settings for competitive mode
-
-
-### Rates & Lerps
-- Aliases for rates, lerps and interp ratio - extremely useful to change lerp in an instant
-
-### Crosshair
-- Setup crosshair to be white with black border (colorblind mode)
-- The crosshair is most visible in this mode
-- There is also aliases to change crosshair color
-
-### Mouse
-- Disabling all sorts of mouse filters to give the game the raw mouse movement
-
-
-### Keyboard
-- A must-have null-cancelling movement script for movement keys
-
-
-### Glows
-- Glows are self-explanatory
-
-
-### Net Graph
-- Displays crucial information of whether the server you are in is having any issues with rates, chokes or loss
-
-### Binds
-- Useful binds for competitive modes (do not forget to uncomment the line if you want to use those binds)
-- The most useful one is `F5` which is to get rid of those "invisible SI, survivor stuck in saferoom" issues
-
-### Aliases
-- Aliases to shorten commands
-
-
-### Toggles
-- Useful toggles
-
-
-### Server Connect Binds
-- Servers in the Asia region has more than one IP to connect to
-- For convenience sake, all servers and their alternate IPs are set in aliases so as to join them quickly instead of doing the whole "what is the VPN for this server? Copy-paste-connect" thing
-- Read through the aliases to get familiar with the aliases used
-
-### Final Launch Parameters
-- Setting up the lerp, rates and interp to use here
-
-
-### Execute Custom Config
-- Any additional settings you added in `config_custom.cfg` will be executed
-
-
-### Write Changes To Config
-- Write the config to the game
