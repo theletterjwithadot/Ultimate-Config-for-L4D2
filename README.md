@@ -4,16 +4,6 @@
 - [Preamble](#preamble)
 - [Backing up current config](#backing-up-current-config)
 - [Instructions](#instructions)
-- [The files](#the-files)
-  - [autoexec.cfg](#autoexeccfg)
-  - [ultimateconfig.cfg](#ultimateconfigcfg)
-  - [config_custom.cfg](#config_customcfg)
-  - [helper.cfg](#helpercfg)
-  - [binds_config.cfg](#binds_configcfg)
-  - [binds_pressed.cfg](#binds_pressedcfg)
-  - [binds_unpressed.cfg](#binds_unpressedcfg)
-  - [CSGO Font w Console](#csgo-font-w-console)
-  - [Color Correction](#color-correction)
 - [Reviews](#reviews)
 
 ## Disclaimer
@@ -62,65 +52,6 @@
       - Please note that the command above **resets the game config**. **All custom binds/mappings will be removed**. You will have to manually add or change your custom binds/mappings after this command.
 
  8. Change any binding that you do manually (like binding different key to zoom, changing crouch key, etc) in the game settings
-
-## The files
-
-### autoexec.cfg
-    .../cfg/autoexec.cfg
-The `autoexec.cfg` runs a command that is needed to make the CSGO Font addon to work. Ensure that you change the resolution in
-
-> alias reloadfont "mat_setvideomode **1920 1080** 1; mat_setvideomode **1920 1080** 0"
-
-to match your resolution. It is also where the `ultimateconfig.cfg` is called to be executed.
-
-### ultimateconfig.cfg
-    .../cfg/ultimateconfig/ultimateconfig.cfg
-This is where the rest of the magic happens.
-
-### config_custom.cfg
-
-    .../cfg/ultimateconfig/config_custom.cfg
-
-Whatever additional config that you want to add should go here. Instead of changing the `ultimateconfig.cfg`, copy the cvar that you want to change and paste it here with the desired value. This is so that in future, it is easier to update these configs.
-
-### helper.cfg
-
-    .../cfg/ultimateconfig/additional_files/helper.cfg
-
-Typing `help` in console will print out this file that displays all the available commands for quick and easy reference.
-
-### binds_config.cfg
-
-    .../cfg/ultimateconfig/additional_files/binds_config.cfg
-
-Main file that handles dynamic binds. Comment out the execution line in `ultimateconfig.cfg` if you do not wish to use this (right at the bottom).
-
-### binds_pressed.cfg
-
-    .../cfg/ultimateconfig/additional_files/binds_pressed.cfg
-
-These are the binds when ALT key is pressed. These are binds that I made as i have to say these frequently. You can change this as to how you want. Each bind basically has 5 different sentences (thus "dynamic binds").
-
-### binds_unpressed.cfg
-
-    .../cfg/ultimateconfig/additional_files/binds_unpressed.cfg
-
-These are the binds when ALT key is not pressed. These are binds that I made as i have to say these frequently. You can change this as to how you want. Each bind basically has 5 different sentences (thus "dynamic binds").
-
-### CSGO Font w Console 
-
-    .../addons/CSGO Font.vpk
-
-A font pack that makes the game menu and texts cleaner also also enlarges console text to make it more readable than the default font size.
-
-### Color Correction
-
-    .../materials/correction/ghost.pwl.raw
-    .../materials/correction/ghost.raw
-    .../materials/correction/infected.pwl.raw
-    .../materials/correction/infected.raw
-
-These files adjust the orange and blue tint for Special Infected, making it lighter. Credits to [Derpduck](http://www.steamcommunity.com/profiles/76561198038478485) for creating these files.
 
 ## Reviews
 
