@@ -29,7 +29,7 @@
  2. Copy the files and folders into your game directory:
 `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`
  3. Setup launch options of L4D2: `Right-click Left 4 Dead 2 >> Properties >> Set Launch Options`
-  4. Add the following line into the box: `-lv -noborder -high +mat_queue_mode 2 +precache_all_survivors 1 -novid -console -noipx -nod3d9ex -nojoy -noforcemaccel -noforcemparms +mat_motion_blur_percent_of_screen_max 0 +clientport 27619`
+  4. Add the following line into the box: `-lv -noborder -high +precache_all_survivors 1 -novid -console -nojoy -noforcemaccel -noforcemparms -noforcemspd +mat_motion_blur_percent_of_screen_max 0 +clientport 27666`
       - Remove `-lv` if you do not prefer to play in low violence mode
  6. Setup video settings as per given below if you have a potato computer like mine (you may use your higher settings for items in **bold** if you have a beast)
 
@@ -45,7 +45,7 @@
 | Shader Detail               | Low                           | If you have a powerful system, you can set this to max       |
 | Effect Detail               | High                          | This is to ensure that you can see Tank rocks from a distance |
 | **Model/Texture Detail**    | Low                           | If you have a powerful system, you can set this to max       |
-| Multicore Rendering         | Enabled                       | Uses all available CPU cores for the game                    |
+| **Multicore Rendering**     | Enabled                       | Uses all available CPU cores for the game (Disable this if you have an old computer or facing fps issues even with this config) |
 | Paged Pool Memory Available | High                          | More memory is assigned to the game which results in the game loading maps slightly faster |
 
   7. Launch game and open console and run the following command: `unbindall; exec config_default.cfg; exec autoexec.cfg`
