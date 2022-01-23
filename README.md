@@ -4,16 +4,6 @@
 - [Preamble](#preamble)
 - [Backing up current config](#backing-up-current-config)
 - [Instructions](#instructions)
-- [The files](#the-files)
-  - [autoexec.cfg](#autoexeccfg)
-  - [ultimateconfig.cfg](#ultimateconfigcfg)
-  - [config_custom.cfg](#config_customcfg)
-  - [helper.cfg](#helpercfg)
-  - [binds_config.cfg](#binds_configcfg)
-  - [binds_pressed.cfg](#binds_pressedcfg)
-  - [binds_unpressed.cfg](#binds_unpressedcfg)
-  - [CSGO Font w Console](#csgo-font-w-console)
-  - [Color Correction](#color-correction)
 - [Reviews](#reviews)
 
 ## Disclaimer
@@ -39,7 +29,7 @@
  2. Copy the files and folders into your game directory:
 `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`
  3. Setup launch options of L4D2: `Right-click Left 4 Dead 2 >> Properties >> Set Launch Options`
-  4. Add the following line into the box: `-lv -noborder -high +mat_queue_mode 2 +precache_all_survivors 1 -novid -console -noipx -nod3d9ex -nojoy -noforcemaccel -noforcemparms +mat_motion_blur_percent_of_screen_max 0 +clientport 27619`
+  4. Add the following line into the box: `-lv -noborder -high +precache_all_survivors 1 -novid -console -nojoy -noforcemaccel -noforcemparms -noforcemspd +mat_motion_blur_percent_of_screen_max 0 +clientport 27666`
       - Remove `-lv` if you do not prefer to play in low violence mode
  6. Setup video settings as per given below if you have a potato computer like mine (you may use your higher settings for items in **bold** if you have a beast)
 
@@ -55,72 +45,13 @@
 | Shader Detail               | Low                           | If you have a powerful system, you can set this to max       |
 | Effect Detail               | High                          | This is to ensure that you can see Tank rocks from a distance |
 | **Model/Texture Detail**    | Low                           | If you have a powerful system, you can set this to max       |
-| Multicore Rendering         | Enabled                       | Uses all available CPU cores for the game                    |
+| **Multicore Rendering**     | Enabled                       | Uses all available CPU cores for the game (Disable this if you have an old computer or facing fps issues even with this config) |
 | Paged Pool Memory Available | High                          | More memory is assigned to the game which results in the game loading maps slightly faster |
 
   7. Launch game and open console and run the following command: `unbindall; exec config_default.cfg; exec autoexec.cfg`
       - Please note that the command above **resets the game config**. **All custom binds/mappings will be removed**. You will have to manually add or change your custom binds/mappings after this command.
 
  8. Change any binding that you do manually (like binding different key to zoom, changing crouch key, etc) in the game settings
-
-## The files
-
-### autoexec.cfg
-    .../cfg/autoexec.cfg
-The `autoexec.cfg` runs a command that is needed to make the CSGO Font addon to work. Ensure that you change the resolution in
-
-> alias reloadfont "mat_setvideomode **1920 1080** 1; mat_setvideomode **1920 1080** 0"
-
-to match your resolution. It is also where the `ultimateconfig.cfg` is called to be executed.
-
-### ultimateconfig.cfg
-    .../cfg/ultimateconfig/ultimateconfig.cfg
-This is where the rest of the magic happens.
-
-### config_custom.cfg
-
-    .../cfg/ultimateconfig/config_custom.cfg
-
-Whatever additional config that you want to add should go here. Instead of changing the `ultimateconfig.cfg`, copy the cvar that you want to change and paste it here with the desired value. This is so that in future, it is easier to update these configs.
-
-### helper.cfg
-
-    .../cfg/ultimateconfig/additional_files/helper.cfg
-
-Typing `help` in console will print out this file that displays all the available commands for quick and easy reference.
-
-### binds_config.cfg
-
-    .../cfg/ultimateconfig/additional_files/binds_config.cfg
-
-Main file that handles dynamic binds. Comment out the execution line in `ultimateconfig.cfg` if you do not wish to use this (right at the bottom).
-
-### binds_pressed.cfg
-
-    .../cfg/ultimateconfig/additional_files/binds_pressed.cfg
-
-These are the binds when ALT key is pressed. These are binds that I made as i have to say these frequently. You can change this as to how you want. Each bind basically has 5 different sentences (thus "dynamic binds").
-
-### binds_unpressed.cfg
-
-    .../cfg/ultimateconfig/additional_files/binds_unpressed.cfg
-
-These are the binds when ALT key is not pressed. These are binds that I made as i have to say these frequently. You can change this as to how you want. Each bind basically has 5 different sentences (thus "dynamic binds").
-
-### CSGO Font w Console 
-
-    .../addons/CSGO Font.vpk
-
-A font pack that makes the game menu and texts cleaner also also enlarges console text to make it more readable than the default font size.
-
-### Color Correction
-
-    .../materials/correction/ghost.pwl.raw
-    .../materials/correction/ghost.raw
-    .../materials/correction/infected.pwl.raw
-    .../materials/correction/infected.raw
-
-These files adjust the orange and blue tint for Special Infected, making it lighter. Credits to [Derpduck](http://www.steamcommunity.com/profiles/76561198038478485) for creating these files.
 
 ## Reviews
 
