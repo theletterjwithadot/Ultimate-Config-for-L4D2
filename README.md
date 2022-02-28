@@ -29,7 +29,7 @@
  2. Copy the files and folders into your game directory:
 `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`
  3. Setup launch options of L4D2: `Right-click Left 4 Dead 2 >> Properties >> Set Launch Options`
-  4. Add the following line into the box: `-lv -noborder -high +precache_all_survivors 1 -novid -console -nojoy -noforcemaccel -noforcemparms -noforcemspd +mat_motion_blur_percent_of_screen_max 0 +clientport 27666`
+  4. Add the following line into the box: `-lv -high +precache_all_survivors 1 -novid -console -nojoy -noforcemaccel -noforcemparms -noforcemspd +mat_motion_blur_percent_of_screen_max 0 +clientport 27666`
       - Remove `-lv` if you do not prefer to play in low violence mode
  6. Setup video settings as per given below if you have a potato computer like mine (you may use your higher settings for items in **bold** if you have a beast)
 
@@ -42,7 +42,7 @@
 | **Anti-Aliasing Mode**      | None                          | No reason to have this enabled. If you have a powerful system, you can set this to max. |
 | **Filtering Mode**          | Trilinear                     | No reason to run higher than this                            |
 | Wait For Vertical Sync      | Disabled                      | Having VSync enabled locks your FPS to your screen's refresh rate that causes input lag |
-| Shader Detail               | Low                           | If you have a powerful system, you can set this to max       |
+| **Shader Detail**           | Low                           | If you have a powerful system, you can set this to max       |
 | Effect Detail               | High                          | This is to ensure that you can see Tank rocks from a distance |
 | **Model/Texture Detail**    | Low                           | If you have a powerful system, you can set this to max       |
 | **Multicore Rendering**     | Enabled                       | Uses all available CPU cores for the game (Disable this if you have an old computer or facing fps issues even with this config) |
