@@ -1,3 +1,4 @@
+
 # Ultimate L4D2 Config (autoexec) by J.
 
 - [Disclaimer](#disclaimer)
@@ -21,8 +22,8 @@
 ## Backing up current config
 1. Go to your Left 4 Dead 2 installation directory `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`
 2. Right-click `cfg` folder and click `Send to >> Compressed (zipped) folder`
-3. This will be your backup in the event that you would like to revert back to your original settings
-   - Simply delete `cfg` folder and extract the zipped `cfg` folder
+3. This will be your backup in the event that you would like to revert to your original settings
+   -  Simply delete existing `cfg` folder and extract the zipped `cfg` folder back to the directory stated in point 1 and launch your game to revert back to previous settings
 
 ## Instructions
  1. **Read through each config file to understand what is happening**
@@ -78,3 +79,80 @@
 > *What I will tell you is that, after a versus L4D2 player for so long being, I give my stamp of awe and approval for his work after testing/using it for a few weeks. Rating this ultimate config 12 outta 10 stars #cantlivewithoutit*
 
 [daemon9s](http://www.steamcommunity.com/profiles/76561198308768316 "daemon9s")
+
+## Credits / Special Thanks / Attributions
+The creation of this config is inspired by many other configs and inputs from members of the community that enabled me to come up with this config and make it be what it is today.
+
+**Special Contributions**
+- Derpduck (SI Color Correction)
+- Urik (CSGO Font)
+
+**Inspiration and Adaptation**
+- asfn
+- baka
+- blade
+- bunnerh
+- canadarox
+- CarnageHeart
+- Cedric
+- dawkins
+- dieckmann215
+- don
+- draxios
+- eram
+- erza
+- fakiyo
+- fig newtons'
+- grizz
+- infested_soul
+- Kaizen
+- kekkeri
+- linfosoma
+- ljboi
+- m0de
+- mason
+- MatthewClair
+- Maverick
+- MeBad
+- miu
+- mystrdat
+- ningning
+- nova.
+- prodigysim
+- prsto
+- purple
+- pushpop
+- shade
+- simi
+- Sir
+- speshul
+- xclusionnl
+- zeon
+- =[SFS]= def+1 -TPF- a.k.a. =[SFS]= rokkit lawnchair -TPF-
+- [AoC] Revalks L4D Script
+
+**Testers**
+- alexander
+- anna
+- bubba
+- Chatic Good
+- Daemon9s
+- Ervi
+- FBoyz Clan
+- Kirvi
+- ma0o0o
+- purps
+- Scar
+- Target
+
+**Special Thanks**
+- AlliedModders
+- GameBanana
+- Github
+- Google
+- L4D Community Autoexec
+- L4Dnation
+- Left4Dead Fandom
+- markdown-toc
+- PCGamingWiki
+- StackEdit
