@@ -126,6 +126,7 @@ The creation of this config is inspired by many other configs and inputs from me
 - simi
 - Sir
 - speshul
+- Xbye
 - xclusionnl
 - zeon
 - =[SFS]= def+1 -TPF- a.k.a. =[SFS]= rokkit lawnchair -TPF-
