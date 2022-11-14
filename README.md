@@ -1,11 +1,13 @@
 
+
 # Ultimate L4D2 Config (autoexec) by J.
 
-- [Disclaimer](#disclaimer)
-- [Preamble](#preamble)
-- [Backing up current config](#backing-up-current-config)
-- [Instructions](#instructions)
-- [Reviews](#reviews)
+  * [Disclaimer](#disclaimer)
+  * [Preamble](#preamble)
+  * [Backing up current config](#backing-up-current-config)
+  * [Instructions](#instructions)
+  * [Reviews](#reviews)
+  * [Credits / Special Thanks / Attributions](#credits---special-thanks---attributions)
 
 ## Disclaimer
 
