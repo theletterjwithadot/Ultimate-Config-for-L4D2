@@ -7,7 +7,7 @@
   * [Backing up current config](#backing-up-current-config)
   * [Instructions](#instructions)
   * [Reviews](#reviews)
-  * [Credits / Special Thanks / Attributions](#credits---special-thanks---attributions)
+  * [Credits / Special Thanks / Attributions](#credits--special-thanks--attributions)
 
 ## Disclaimer
 
