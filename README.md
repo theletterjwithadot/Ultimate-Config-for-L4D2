@@ -114,7 +114,6 @@ The creation of this config is inspired by many other configs and inputs from me
 - m0de
 - mason
 - MatthewClair
-- Maverick
 - MeBad
 - miu
 - mystrdat
@@ -143,7 +142,10 @@ The creation of this config is inspired by many other configs and inputs from me
 - Ervi
 - FBoyz Clan
 - Kirvi
+- Kiwi
 - ma0o0o
+- Maverick
+- Mr. Pink
 - purps
 - Scar
 - Target
