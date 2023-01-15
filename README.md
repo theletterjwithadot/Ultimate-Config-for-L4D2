@@ -87,7 +87,7 @@ The creation of this config is inspired by many other configs and inputs from me
 
 **Special Contributions**
 - Derpduck (SI Color Correction)
-- Urik (CSGO Font)
+- Urik (Font VPK)
 
 **Inspiration and Adaptation**
 - asfn
@@ -133,12 +133,13 @@ The creation of this config is inspired by many other configs and inputs from me
 - =[SFS]= def+1 -TPF- a.k.a. =[SFS]= rokkit lawnchair -TPF-
 - [AoC] Revalks L4D Script
 
-**Testers**
+**Testers/Thank Yous**
 - alexander
 - anna
 - bubba
 - Chatic Good
 - Daemon9s
+- Dec
 - Ervi
 - FBoyz Clan
 - Kirvi
