@@ -95,6 +95,7 @@ The creation of this config is inspired by many other configs and inputs from me
 - asfn
 - baka
 - blade
+- brunnerh
 - bunnerh
 - canadarox
 - CarnageHeart
@@ -149,6 +150,7 @@ The creation of this config is inspired by many other configs and inputs from me
 - Kiwi
 - ma0o0o
 - Maverick
+- Max ღ
 - Mr. Pink
 - purps
 - Scar
