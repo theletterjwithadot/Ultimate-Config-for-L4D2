@@ -33,7 +33,7 @@
  2. Copy the files and folders into your game directory:
 `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`
  3. Setup launch options of L4D2: `Right-click Left 4 Dead 2 >> Properties >> Set Launch Options`
- 4. Add the following line into the box: `-lv +precache_all_survivors 1 -novid -console -nojoy -noforcemaccel -noforcemparms -noforcemspd +clientport 27666`
+ 4. Add the following line into the box: `-lv -novid -console -useforcedmparms -noforcemaccel -noforcemspd +clientport 27666 +sv_cheats 1 +precache_all_survivors 1`
       - Remove `-lv` if you do not prefer to play in low violence mode
  5. Setup video settings as per given below if you have a potato computer like mine (you may use your higher settings for items in **bold** if you have a beast)
  6. A Redditor has done a great write-up of how each setting can result in fps drop/increase, you may reference that to set your own settings. You may refer to the article [here](https://www.reddit.com/r/l4d2/comments/vmhq82/left_4_dead_2_performance_guide_2022/).
