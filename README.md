@@ -53,7 +53,7 @@
 | **Multicore Rendering**     | Enabled                       | Uses all available CPU cores for the game (Disable this if you have an old computer or facing fps issues even with this config) |
 | Paged Pool Memory Available | High                          | More memory is assigned to the game, which results in the game loading maps slightly faster |
 
-  7. Launch game and open console and run the following command: `unbindall; exec config_default.cfg; exec autoexec.cfg`
+  7. Launch game and open console and run the following command: `exec config_default.cfg; exec autoexec.cfg`
       - Note that the command above **resets the game config**. **All custom binds/mappings will be removed**. You will have to manually add or change your custom binds/mappings after this command.
 
  8. Change any binding that you do manually (like binding different key to zoom, changing crouch key, etc) in the game settings
