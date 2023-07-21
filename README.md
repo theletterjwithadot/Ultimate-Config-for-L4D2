@@ -33,7 +33,7 @@
  2. Copy the files and folders into your game directory:
 `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`
  3. Setup launch options of L4D2: `Right-click Left 4 Dead 2 >> Properties >> Set Launch Options`
- 4. Add the following line into the box: `-lv +precache_all_survivors 1 -novid -console -nojoy -noforcemaccel -noforcemparms -noforcemspd +clientport 27666`
+ 4. Add the following line into the box: `-lv -novid -console -useforcedmparms -noforcemaccel -noforcemspd +clientport 27666`
       - Remove `-lv` if you do not prefer to play in low violence mode
  5. Setup video settings as per given below if you have a potato computer like mine (you may use your higher settings for items in **bold** if you have a beast)
  6. A Redditor has done a great write-up of how each setting can result in fps drop/increase, you may reference that to set your own settings. You may refer to the article [here](https://www.reddit.com/r/l4d2/comments/vmhq82/left_4_dead_2_performance_guide_2022/).
@@ -53,7 +53,7 @@
 | **Multicore Rendering**     | Enabled                       | Uses all available CPU cores for the game (Disable this if you have an old computer or facing fps issues even with this config) |
 | Paged Pool Memory Available | High                          | More memory is assigned to the game, which results in the game loading maps slightly faster |
 
-  7. Launch game and open console and run the following command: `unbindall; exec config_default.cfg; exec autoexec.cfg`
+  7. Launch game and open console and run the following command: `exec config_default.cfg; exec autoexec.cfg`
       - Note that the command above **resets the game config**. **All custom binds/mappings will be removed**. You will have to manually add or change your custom binds/mappings after this command.
 
  8. Change any binding that you do manually (like binding different key to zoom, changing crouch key, etc) in the game settings
@@ -109,6 +109,7 @@ The creation of this config is inspired by many other configs and inputs from me
 - fakiyo
 - fig newtons'
 - grizz
+- hfmkwi
 - infested_soul
 - Kaizen
 - kekkeri
@@ -140,6 +141,7 @@ The creation of this config is inspired by many other configs and inputs from me
 **Testers/Thank Yous**
 - alexander
 - anna
+- Boomer
 - bubba
 - Chatic Good
 - Daemon9s
@@ -151,6 +153,7 @@ The creation of this config is inspired by many other configs and inputs from me
 - ma0o0o
 - Maverick
 - Max ღ
+- Maxines
 - Mr. Pink
 - purps
 - Scar
