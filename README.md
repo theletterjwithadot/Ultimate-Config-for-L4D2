@@ -158,6 +158,7 @@ The creation of this config is inspired by many other configs and inputs from me
 - purps
 - Scar
 - Target
+- TASbot
 
 **Special Thanks**
 - AlliedModders
