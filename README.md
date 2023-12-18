@@ -8,35 +8,37 @@
   * [Backing up current config](#backing-up-current-config)
   * [Instructions](#instructions)
   * [Reviews](#reviews)
-  * [Credits / Special Thanks / Attributions](#credits--special-thanks--attributions)
+  * [Acknowledgments / Gratitude / Attribution](#acknowledgments--gratitude--attribution)
 
 ## Disclaimer
 
-- The config has been tested for years with multiple players and has proven to be very useful
-- The config here is given "AS IS" with no warranty
-- The config changes quite a handful of [cvars](https://developer.valvesoftware.com/wiki/List_of_L4D2_Cvars) in the game as such, please perform your own backup if you would like to roll back to your previous config
-- Individual's mileage may vary
+- This configuration has undergone extensive testing over the years with numerous players, consistently proving its utility.
+- Please note that the provided configuration is offered "AS IS" without any warranty.
+- Given that the configuration makes significant changes to various [cvars](https://developer.valvesoftware.com/wiki/List_of_L4D2_Cvars) in the game, it's advisable to create your own backup if you wish to revert to your previous setup.
+- Keep in mind that individual experiences with the configuration may vary.
 
 ## Preamble
-- Many players do not have the basic setup for Left 4 Dead 2 which hinders them from playing well in the competitive servers, especially those running on above the default server tick rate of 30
-- This config is meant to provide a player with the needed adjustments and also with additional features that assists and optimizes their gameplay
-- My goal of sharing this config is to get more players to have the optimal settings configured for this game so that everyone can have a better gaming experience all together
+- Numerous players face challenges in Left 4 Dead 2 due to lacking the essential setup, thereby impacting their performance on competitive servers, particularly those operating at tick rates beyond the default 30.
+- This config is designed to equip players with the necessary adjustments and additional features, enhancing their gameplay experience by offering assistance and optimization.
+- By sharing this config, my objective is to encourage more players to adopt optimal settings for the game, fostering a collective improvement in everyone's gaming experience.
 
 ## Backing up current config
-1. Go to your Left 4 Dead 2 installation directory `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`
-2. Right-click `cfg` folder and click `Send to >> Compressed (zipped) folder`
-3. This will be your backup in the event that you would like to revert to your original settings
-   -  Simply delete existing `cfg` folder and extract the zipped `cfg` folder back to the directory stated in point 1 and launch your game to revert to previous settings
+1. Navigate to your Left 4 Dead 2 installation directory located at `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`.
+
+1. Right-click on the 'cfg' folder and select `Send to >> Compressed (zipped) folder`.
+2. This compressed folder serves as your backup should you wish to return to your original settings:
+   - To revert, delete the current `cfg` folder, then extract the zipped `cfg` folder back into the directory mentioned in step 1.
+   - Launch your game, and your settings will be restored to their previous configuration.
 
 ## Instructions
- 1. **Read through each config file to understand what is happening**
- 2. Copy the files and folders into your game directory:
-`.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`
- 3. Setup launch options of L4D2: `Right-click Left 4 Dead 2 >> Properties >> Set Launch Options`
- 4. Add the following line into the box: `-lv -novid -console -useforcedmparms -noforcemaccel -noforcemspd +clientport 27666`
-      - Remove `-lv` if you do not prefer to play in low violence mode
- 5. Setup video settings as per given below if you have a potato computer like mine (you may use your higher settings for items in **bold** if you have a beast)
- 6. A Redditor has done a great write-up of how each setting can result in fps drop/increase, you may reference that to set your own settings. You may refer to the article [here](https://www.reddit.com/r/l4d2/comments/vmhq82/left_4_dead_2_performance_guide_2022/).
+  1. **Read through each config file to understand what is happening**
+  2. Copy the files and folders into your game directory located at: 
+  `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`.
+  3. Configure Left 4 Dead 2 launch options: `Right-click Left 4 Dead 2 >> Properties >> Set Launch Options`.
+  4. Input the following line into the box: `-lv -novid -console -useforcedmparms -noforcemaccel -noforcemspd +clientport 27666`.
+      - Optionally, omit `-lv` if you prefer not to play in low violence mode.
+  5. Adjust video settings based on the specifications below, especially if your computer has performance constraints (utilize higher settings for items in **bold** if you have a powerful system).
+  6. An informative Reddit post delves into the impact of each setting on FPS, offering insights for customizing your preferences. Refer to the detailed article [here](https://www.reddit.com/r/l4d2/comments/vmhq82/left_4_dead_2_performance_guide_2022/).
 
 | Setting                     | Value                         | Remarks                                                      |
 | --------------------------- | ----------------------------- | ------------------------------------------------------------ |
@@ -53,10 +55,10 @@
 | **Multicore Rendering**     | Enabled                       | Uses all available CPU cores for the game (Disable this if you have an old computer or facing fps issues even with this config) |
 | Paged Pool Memory Available | High                          | More memory is assigned to the game, which results in the game loading maps slightly faster |
 
-  7. Launch game and open console and run the following command: `exec config_default.cfg; exec autoexec.cfg`
-      - Note that the command above **resets the game config**. **All custom binds/mappings will be removed**. You will have to manually add or change your custom binds/mappings after this command.
+  7. Launch the game and access the console, then execute the command: `exec config_default.cfg; exec autoexec.cfg`.
+      - It's crucial to recognize that this command **resets the game configuration**, leading to the **removal of all custom binds and mappings**. You'll need to add/modify your custom binds and mappings manually post-execution.
 
- 8. Change any binding that you do manually (like binding different key to zoom, changing crouch key, etc) in the game settings
+ 8. Modify any bindings that are manually set (such as altering the zoom key, changing the crouch key, etc.) in the game settings.
 
 ## Reviews
 
@@ -84,14 +86,15 @@
 
 [daemon9s](http://www.steamcommunity.com/profiles/76561198308768316 "daemon9s")
 
-## Credits / Special Thanks / Attributions
-The creation of this config is inspired by many other configs and inputs from members of the community that enabled me to come up with this config and make it be what it is today.
+## Acknowledgments / Gratitude / Attribution
+The development of this configuration draws inspiration from various other configurations and valuable input provided by community members. Their collective contributions have played a pivotal role in shaping and refining this configuration into its current state.
 
-**Special Contributions**
-- Derpduck (SI Color Correction)
-- Urik (Font VPK)
+**Distinctive Contributions**
+- Derpduck ([SI Color Correction](https://steamcommunity.com/sharedfiles/filedetails/?id=830201245))
+- Urik ([Font](https://steamcommunity.com/workshop/filedetails/?id=279970909))
 
 **Inspiration and Adaptation**
+
 - asfn
 - baka
 - blade
@@ -139,6 +142,7 @@ The creation of this config is inspired by many other configs and inputs from me
 - [AoC] Revalks L4D Script
 
 **Testers/Thank Yous**
+
 - alexander
 - anna
 - Boomer
@@ -161,7 +165,9 @@ The creation of this config is inspired by many other configs and inputs from me
 - TASbot
 
 **Special Thanks**
+
 - AlliedModders
+- ChatGPT
 - GameBanana
 - Github
 - Google
