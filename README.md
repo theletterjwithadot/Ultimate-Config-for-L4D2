@@ -1,14 +1,11 @@
-
-
-
 # Ultimate L4D2 Config (autoexec) by J.
 
-  * [Disclaimer](#disclaimer)
-  * [Preamble](#preamble)
-  * [Backing up current config](#backing-up-current-config)
-  * [Instructions](#instructions)
-  * [Reviews](#reviews)
-  * [Acknowledgments / Gratitude / Attribution](#acknowledgments--gratitude--attribution)
+* [Disclaimer](#disclaimer)
+* [Preamble](#preamble)
+* [Backing up current config](#backing-up-current-config)
+* [Instructions](#instructions)
+* [Reviews](#reviews)
+* [Acknowledgments / Gratitude / Attribution](#acknowledgments--gratitude--attribution)
 
 ## Disclaimer
 
@@ -24,21 +21,20 @@
 
 ## Backing up current config
 1. Navigate to your Left 4 Dead 2 installation directory located at `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`.
-
-1. Right-click on the 'cfg' folder and select `Send to >> Compressed (zipped) folder`.
-2. This compressed folder serves as your backup should you wish to return to your original settings:
+2. Right-click on the 'cfg' folder and select `Send to >> Compressed (zipped) folder`.
+3. This compressed folder serves as your backup should you wish to return to your original settings:
    - To revert, delete the current `cfg` folder, then extract the zipped `cfg` folder back into the directory mentioned in step 1.
    - Launch your game, and your settings will be restored to their previous configuration.
 
 ## Instructions
-  1. **Read through each config file to understand what is happening**
-  2. Copy the files and folders into your game directory located at: `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`.
+1. **Read through each config file to understand what is happening**
+2. Copy the files and folders into your game directory located at: `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`.
 
-  3. Configure Left 4 Dead 2 launch options: Right-click `Left 4 Dead 2` >> `Properties` >> `Set Launch Options`.
-  4. Input the following line into the box: `-lv -novid -console -useforcedmparms -noforcemaccel -noforcemspd +clientport 27666`.
-      - Optionally, omit `-lv` if you prefer not to play in low violence mode.
-  5. Adjust video settings based on the specifications below, especially if your computer has performance constraints (utilize higher settings for items in **bold** if you have a powerful system).
-  6. An informative Reddit post delves into the impact of each setting on FPS, offering insights for customizing your preferences. Refer to the detailed article [here](https://www.reddit.com/r/l4d2/comments/vmhq82/left_4_dead_2_performance_guide_2022/).
+3. Configure Left 4 Dead 2 launch options: Right-click `Left 4 Dead 2` >> `Properties` >> `Set Launch Options`.
+4. Input the following line into the box: `-lv -novid -console -useforcedmparms -noforcemaccel -noforcemspd +clientport 27666`.
+   - Optionally, omit `-lv` if you prefer not to play in low violence mode.
+5. Adjust video settings based on the specifications below, especially if your computer has performance constraints (utilize higher settings for items in **bold** if you have a powerful system).
+6. An informative Reddit post delves into the impact of each setting on FPS, offering insights for customizing your preferences. Refer to the detailed article [here](https://www.reddit.com/r/l4d2/comments/vmhq82/left_4_dead_2_performance_guide_2022/).
 
 | Setting                     | Value                         | Remarks                                                      |
 | --------------------------- | ----------------------------- | ------------------------------------------------------------ |
@@ -55,10 +51,10 @@
 | **Multicore Rendering**     | Enabled                       | Uses all available CPU cores for the game (Disable this if you have an old computer or facing FPS issues even with this config). |
 | Paged Pool Memory Available | High                          | More memory is assigned to the game, which results in the game loading maps slightly faster. If your system is running out of RAM, reduce this value. |
 
-  7. Launch the game and access the console, then execute the command: `exec config_default.cfg; exec autoexec.cfg`.
-      - It's crucial to recognize that this command **resets the game configuration**, leading to the **removal of all custom binds and mappings**. You'll need to add/modify your custom binds and mappings manually post-execution.
+7. Launch the game and access the console, then execute the command: `exec config_default.cfg; exec autoexec.cfg`.
+   - It's crucial to recognize that this command **resets the game configuration**, leading to the **removal of all custom binds and mappings**. You'll need to add/modify your custom binds and mappings manually post-execution.
 
- 8. Modify any bindings that are manually set (such as altering the zoom key, changing the crouch key, etc.) in the game settings.
+8. Modify any bindings that are manually set (such as altering the zoom key, changing the crouch key, etc.) in the game settings.
 
 ## Reviews
 
