@@ -1,5 +1,6 @@
-Handlee			- https://fonts.google.com/specimen/Handlee
-Galdeano		- https://fonts.google.com/specimen/Galdeano
-Delius			- https://fonts.google.com/specimen/Delius
-Josefin Sans	- https://fonts.google.com/specimen/Josefin+Sans
-Bai Jamjuree	- https://fonts.google.com/specimen/Bai+Jamjuree
+Handlee      - https://fonts.google.com/specimen/Handlee
+Galdeano     - https://fonts.google.com/specimen/Galdeano
+Delius       - https://fonts.google.com/specimen/Delius
+Josefin Sans - https://fonts.google.com/specimen/Josefin+Sans
+Bai Jamjuree - https://fonts.google.com/specimen/Bai+Jamjuree
+Torus        - https://font.download/font/torus
