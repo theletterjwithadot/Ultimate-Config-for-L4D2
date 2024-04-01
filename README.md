@@ -148,8 +148,8 @@ The development of this configuration draws inspiration from various other confi
 - Dec
 - Ervi
 - FBoyz Clan
-- Kirvi
 - Kiwi
+- Krivi
 - ma0o0o
 - Maverick
 - Max ღ
