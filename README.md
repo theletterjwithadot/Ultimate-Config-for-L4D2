@@ -27,36 +27,40 @@
    - Launch your game, and your settings will be restored to their previous configuration.
 
 ## Instructions
-1. **Read through each config file to understand what is happening**
+1. Read through each config file to understand what is happening
+
 2. Copy the files and folders into your game directory located at: `.../Steam/steamapps/common/Left 4 Dead 2/left4dead2/`.
 
 3. Configure Left 4 Dead 2 launch options: Right-click `Left 4 Dead 2` >> `Properties` >> `Set Launch Options`.
+
 4. Input the following line into the box: `-lv -novid -console -useforcedmparms -noforcemaccel -noforcemspd +clientport 27666`.
    - Optionally, omit `-lv` if you prefer not to play in low violence mode.
-5. Adjust video settings based on the specifications below, especially if your computer has performance constraints (utilize higher settings for items in **bold** if you have a powerful system).
+
+5. Adjust video settings based on the specifications below, especially if your computer has performance constraints (utilize higher settings for items <ins>underlined</ins> if you have a powerful system).
+
+   | Setting                     | Value                         | Remarks                                                      |
+   | --------------------------- | ----------------------------- | ------------------------------------------------------------ |
+   | Aspect Ratio                | As per your screen size       |                                                              |
+   | Resolution                  | As per your native resolution |                                                              |
+   | Display Mode                | Full screen                   |                                                              |
+   | Film Grain Amount           | None                          | - For screen clarity.                                        |
+   | <ins>Anti-Aliasing Mode</ins>   | None                          | - If you do not have a dedicated GPU, keep this to none.<br>- If you have a dedicated GPU, you can increase this but note that it can significantly increase GPU usage. |
+   | <ins>Filtering Mode</ins>       | Trilinear                     | - If you have a powerful system, you can set this higher.    |
+   | Wait For Vertical Sync      | Disabled                      | - Having VSync enabled locks your FPS to your screen's refresh rate, which may cause input lag. |
+   | <ins>Shader Detail</ins>        | Low                           | - If you have a powerful system, you can set this higher.    |
+   | Effect Detail               | High                          | - Ensures visibility of Tank rocks from a distance.<br>- Renders maximum distance possible. |
+   | <ins>Model/Texture Detail</ins> | Low                           | - If you have a powerful system, you can set this higher.    |
+   | <ins>Multicore Rendering</ins>  | Enabled                       | - Uses all available CPU cores for the game.<br>- Disable this if you have an old computer or face FPS issues even with this config. |
+   | Paged Pool Memory Available | High                          | - More memory is assigned to the game, resulting in faster map loading.<br>- If your system runs out of RAM, reduce this value. |
+
 6. An informative Reddit post delves into the impact of each setting on FPS, offering insights for customizing your preferences. Refer to the detailed article [here](https://www.reddit.com/r/l4d2/comments/vmhq82/left_4_dead_2_performance_guide_2022/).
 
-| Setting                     | Value                         | Remarks                                                      |
-| --------------------------- | ----------------------------- | ------------------------------------------------------------ |
-| Aspect Ratio                | As per your screen size  |                                                              |
-| Resolution                  | As per your native resolution |                                                              |
-| Display Mode                | Full screen                   |                                                              |
-| **Film Grain Amount**       | None                          | For screen clarity.                                          |
-| **Anti-Aliasing Mode**      | None                          | No reason to have this enabled. If you have a powerful system, you can set this to max. |
-| **Filtering Mode**          | Trilinear                     | No reason to run higher than this.                           |
-| Wait For Vertical Sync      | Disabled                      | Having VSync enabled locks your FPS to your screen's refresh rate that causes input lag. |
-| **Shader Detail**           | Low                           | If you have a powerful system, you can set this to max.      |
-| Effect Detail               | High                     | This is to ensure that you can see Tank rocks from a distance. Render max distance possible. |
-| **Model/Texture Detail**    | Low                           | If you have a powerful system, you can set this to max.      |
-| **Multicore Rendering**     | Enabled                       | Uses all available CPU cores for the game (Disable this if you have an old computer or facing FPS issues even with this config). |
-| Paged Pool Memory Available | High                          | More memory is assigned to the game, which results in the game loading maps slightly faster. If your system is running out of RAM, reduce this value. |
-
 7. Launch the game and access the console, then execute the command: `exec config_default.cfg; exec autoexec.cfg`.
-   - It's crucial to recognize that this command **resets the game configuration**, leading to the **removal of all custom binds and mappings**. You'll need to add/modify your custom binds and mappings manually post-execution.
+   - It's crucial to recognize that this command <ins>resets the game configuration</ins>, leading to the <ins>removal of all custom binds and mappings</ins>. You'll need to add/modify your custom binds and mappings manually post-execution.
 
 8. Modify any bindings that are manually set (such as altering the zoom key, changing the crouch key, etc.) in the game settings.
 
-## Reviews
+## Reviews ([Looking for new reviews and feedback](https://forms.gle/Gmo59Q51f3Z3m9Fw7))
 
 > *I was using other incomplete/outdated configs that I found online before I had this ultimate config. My gameplay has drastically been improved by it.*
 >
@@ -141,6 +145,7 @@ The development of this configuration draws inspiration from various other confi
 
 - alexander
 - anna
+- Blue
 - Boomer
 - bubba
 - Chatic Good
@@ -155,6 +160,7 @@ The development of this configuration draws inspiration from various other confi
 - Max ღ
 - Maxines
 - Mr. Pink
+- Poppins
 - purps
 - Scar
 - Target
