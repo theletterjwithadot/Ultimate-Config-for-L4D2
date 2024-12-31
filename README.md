@@ -1,3 +1,25 @@
+# Notice: Reduced Maintenance Starting January 1st, 2025
+
+As of January 1, 2025, I will be concluding active maintenance and updates for this configuration. After dedicating many years to this project and contributing to the Left 4 Dead 2 community, I will be stepping back significantly from direct involvement. Consequently, future game updates or modifications may no longer be promptly reflected in the configuration.
+
+That said, the project will remain fully accessible to the community, and I warmly encourage you to carry forward its legacy. Here’s how you can get involved:
+
+- Fork the repository to create your own version.
+- Experiment with new ideas and implement improvements.
+- Build upon the existing foundation to enhance and expand its capabilities.
+
+If you create derivative works, I kindly ask that you **retain the original credits and acknowledgments**. Preserving the project's history ensures proper recognition of the collaborative effort that has shaped it over the years.
+
+Whether you choose to make minor adjustments or embark on major overhauls, I’m excited to see how this configuration evolves through the community’s creativity and passion. Your contributions can bring fresh perspectives and new energy to this project.
+
+Finally, I extend my heartfelt gratitude to everyone who has supported, contributed to, or been inspired by this endeavor. Your enthusiasm, constructive feedback, and collaborative spirit have made this journey deeply fulfilling. Thank you for being an essential part of this project’s story.
+
+Cheers!
+
+J.
+
+------
+
 # Ultimate L4D2 Config (autoexec) by J.
 
 * [Disclaimer](#disclaimer)
@@ -60,7 +82,7 @@
 
 8. Modify any bindings that are manually set (such as altering the zoom key, changing the crouch key, etc.) in the game settings.
 
-## Reviews ([Looking for new reviews and feedback](https://forms.gle/Gmo59Q51f3Z3m9Fw7))
+## Reviews
 
 > *I was using other incomplete/outdated configs that I found online before I had this ultimate config. My gameplay has drastically been improved by it.*
 >
@@ -86,14 +108,20 @@
 
 [daemon9s](http://www.steamcommunity.com/profiles/76561198308768316 "daemon9s")
 
-## Acknowledgments / Gratitude / Attribution
-The development of this configuration draws inspiration from various other configurations and valuable input provided by community members. Their collective contributions have played a pivotal role in shaping and refining this configuration into its current state.
+## Acknowledgments and Gratitude
 
-**Distinctive Contributions**
-- Derpduck ([SI Color Correction](https://steamcommunity.com/sharedfiles/filedetails/?id=830201245))
-- Urik ([Font](https://steamcommunity.com/workshop/filedetails/?id=279970909))
+The development of this configuration has been greatly influenced by the work of others and the valuable input from the community. Their contributions have been instrumental in shaping and refining this project.
 
-**Inspiration and Adaptation**
+### Distinctive Contributions
+
+Special recognition goes to the following individuals for their significant contributions:
+
+- **Derpduck** - [SI Color Correction](https://steamcommunity.com/sharedfiles/filedetails/?id=830201245)
+- **Urik** - [Font](https://steamcommunity.com/workshop/filedetails/?id=279970909)
+
+### Inspiration and Adaptation
+
+This project draws inspiration from and adapts ideas from the following contributors:
 
 - asfn
 - baka
@@ -141,14 +169,16 @@ The development of this configuration draws inspiration from various other confi
 - =[SFS]= def+1 -TPF- a.k.a. =[SFS]= rokkit lawnchair -TPF-
 - [AoC] Revalks L4D Script
 
-**Testers/Thank Yous**
+### Testers and Thank Yous
+
+A heartfelt thank you to those who tested and provided feedback:
 
 - alexander
 - anna
 - Blue
 - Boomer
 - bubba
-- Chatic Good
+- Chaotic Good
 - Daemon9s
 - Dec
 - Ervi
@@ -160,18 +190,21 @@ The development of this configuration draws inspiration from various other confi
 - Max ღ
 - Maxines
 - Mr. Pink
+- Musheg
 - Poppins
 - purps
 - Scar
 - Target
 - TASbot
 
-**Special Thanks**
+### Special Thanks
+
+I would also like to extend special thanks to the following platforms and communities that supported the development of this configuration:
 
 - AlliedModders
 - ChatGPT
 - GameBanana
-- Github
+- GitHub
 - Google
 - L4D Community Autoexec
 - L4Dnation
@@ -179,3 +212,4 @@ The development of this configuration draws inspiration from various other confi
 - markdown-toc
 - PCGamingWiki
 - StackEdit
+- Typora
